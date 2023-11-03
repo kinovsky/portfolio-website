@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Zachary Kinovsky">
+    <meta name="description" content="This is my case study for the weather-based application titled Vela.">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+    <title>Zachary Kinovsky About Page</title>
+</head>
+
+
+<body>
+    <header>
+        <div>
+            <img src="img/logo/zk_ux_logo.png" alt="Zachary Kinovsky">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div>
+            <h1>Vela</h1>
+            <picture>
+                <source srcset="img/vela/vela_1x/vela_home_preview_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /vela_home_preview_2x.jpg" alt="Vela Case Study">
+            </picture>
+        </div>
+        <div>
+
+
+            <h1>About</h1>
+            <p>
+                Vela is a responsive web app dedicated to providing easy to understand and intuitive displays
+                for real-time weather, wave, and wind conditions, as well as forecasts and reports. The
+                application sets itself apart from its competition by including safety info, as well as
+                recommendations for nearby amenities and attractions for users.
+            </p>
+        </div>
+
+
+        <div>
+            <h2><i>Problem</i></h2>
+            <p>Users need simple access to a variety of weather-based information that will keep them informed and safe
+                while at the beach or out on the water. Many weather apps can confuse and stress out new users, lacking
+                easy-to-read displays or educational information they need to understand terms pertaining to the
+                information they seek. Users also may not be familiar with safety precautions they need to take in order
+                to stay safe during their activities or when inclement weather affects them.</p>
+        </div>
+        <div>
+            <h2><i>Solution</i></h2>
+            <p>An app that grabs from reliable weather API to forecast weather, wind, and waves, but also allows users
+                to submit live updates when sudden shifts in conditions happen in their location. A user-friendly
+                interface will aid users in better understanding complex weather terms and reports rather than confusing
+                or intimidating them and instead, will put them at ease while engaging in their activities. Vela will
+                provide safety information and step-by-step guides in the event of an emergency while on the beach or on
+                the water.</p>
+        </div>
+
+        <div>
+            <h2><i>Table of Contents</i></h2>
+            <ul>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#user_interviews_survey">User Interviews & Survey</a></li>
+                <li><a href="#personas_flows">User Personas & Flows</a></li>
+                <li><a href="#sitemap">Sitemap</a></li>
+                <li><a href="#wireframing">Wireframing & Prototyping</a></li>
+                <li><a href="#usability_testing">Usability Testing</a></li>
+                <li><a href="#refining_design">Refining the Design</a></li>
+                <li><a href="#prototype">Clickable Prototype</a></li>
+            </ul>
+        </div>
+
+        <div id="research">
+            <h1>Research</h1>
+            <h2><i>Competitive Analysis</i></h2>
+            <p>In order to better understand the weather-based application space, I analyzed numerous weather-based apps
+                for their key objectives, strategies, market advantage, UX/UI design, and SWOT profiles. These apps
+                range from ones that strive to be general use for just about any user to utilize, or attempt to fill a
+                niche for particular professions or hobbies, such as surfers, fishers, drone pilots, etc. I chose to
+                focus on the top-rated apps on the iOS and Google Play store, along with apps mentioned by users that
+                were interviewed or responded to a Google survey. Two key apps I chose to focus on were Windy.app and
+                Windy.com.</p>
+        </div>
+        <div>
+            <picture>
+                <source srcset="img/vela/vela_1x/windyapp_1x.png" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /windyapp_2x.png" alt="Windy.app logo">
+            </picture>
+        </div>
+        <div>
+            <h2><i>Summary</i></h2>
+            <p>Wind, waves and weather forecasts for surfers, kitesurfers, windsurgers, sailors, fishermen and other
+                wind sports. Features include:</p>
+            <ul>
+            <li>Local weather forecasts from NOAA for 10 days with 3 hours step.</li>
+            <li>Over 30,000 spots sorted and located by type and area.</li>
+            <li>Community involvement through spot chats and reporting weather changes as they happen.</li>
+                </ul>
+        </div>
+        <div>
+            <picture>
+                <source srcset="img/vela/vela_1x/windycom_1x.png" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /windycom_2x.png" alt="Windy.app logo">
+            </picture>
+        </div>
+        <div>
+            <h2><i>Summary</i></h2>
+            <p>A fast, intuitive, detailed, and accurate weather app aimed at aiding professional pilots, paragliders,
+                skydivers, kiters, surfers, boaters, fishermen, storm chasers, and general weather geeks, as well as by
+                governments army staff, and rescue teams.</p>
+            <ul>
+                <li>40+ different weather maps including wind, rain, temperature, humidity, pressure, and swell (waves).
+                </li>
+            <li>Global satellite composite from NOAA, EUMETSAT, and Himawari with image frequency update of 5-15
+                minutes.</li>
+            <li>1500+ paragliding spots and nearby webcams available on their map.</ul>
+                </li>
+        </div>
+
+
+        <div>
+
+        <a id="user_interviews_survey">
+            <h1>User Interviews & Survey</h1>
+            <p>Over the course of a week, I interviewed 4 individuals to better understand their history with
+                weather-based apps and how they come into play in their everyday lives. Once completed, I created an
+                affinity map to better organize my findings for later reference. The goals of these interviews were to:
+            </p>
+            <ul>
+                <li>Discover how users plan their beach trips and activities around weather conditions.</li>
+                <li>Determine strengths and weaknesses of existing apps.</li>
+                <li>Identify user wants and goals when using these apps.</li>
+                <li>Understanding their biggest pain points and how they can be addressed.</li>
+            </ul>
+            <p>While interviews were being conducted, I sent out a survey to various social media channels to gain more
+                feedback from a variety of users and get a bigger picture of who I might be designing for and gain
+                additional perspectives on user’s experiences with weather apps. Below are affinity maps of the
+                responses I received from my user interviews, organized and color coded to refer back to easily.</p>
+        </div>
+        <div>
+            <picture>
+                <source srcset="img/vela/vela_1x/interview_affinity_map1_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /interview_affinity_map1_2x.jpg" alt="Affinity Map 1">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source srcset="img/vela/vela_1x/interview_affinity_map2_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /interview_affinity_map2_2x.jpg" alt="Affinity Map 2">
+            </picture>
+        </div>
+        <div>
+            <h3><i>Key Insights</i></h3>
+            <ul>
+                <li>Most users complain that the weather apps they commonly use can be unreliable and untrustworthy
+                    whether the information is incorrect, data is missing, or usability is frustrating.</li>
+                <li>Most users want information for nearby attractions, restaurants, shops, and parking close to beaches
+                    and water activity spots.</li>
+                <li>Safety is important, even to the most stubborn user, to fall back on when in doubt.</li>
+                <li>Weather, wind, crowds, air quality, and waves/tides were the most popular choices that might impact
+                    a user's decision to partake in their beach trips or activities.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1 id="personas_flows">User Personas & Flows</h1>
+            <p>With competitive analysis and user interviews wrapped up, I developed user personas that represent Vela’s
+                target audience in order to empathize with the app’s key users and better understand their problems and
+                goals and how they can be addressed. I crafted 2 key personas (Thelma & Joe) based on the product
+                requirements, as well as an outlier persona (Darrell) for edge cases.</p>
+            <p>To better align user needs with business goals, I fleshed out journey maps to ideate the navigation
+                structure of the Vela application prior to creating a sitemap and wireframing. Each persona possesses
+                unique goals and needs, so it was integral that the application properly address these aspects of our
+                users.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/persona_thelma_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /persona_thelma_2x.jpg" alt="Thelma Phillips">
+            </picture>
+            <h3><i>Thelma's User Journey</i></h3>
+            <picture>
+                <source srcset="img/vela/vela_1x/user_journey_thelma_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /user_journey_thelma_2x.jpg" alt="Thelma User Journey">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/persona_joe_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /persona_joe_2x.jpg" alt="Joe Morris">
+            </picture>
+            <h3><i>Joe's User Journey</i></h3>
+            <picture>
+                <source srcset="img/vela/vela_1x/user_journey_joe_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /user_journey_joe_2x.jpg" alt="Joe User Journey">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/persona_darrell_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /persona_darrell_2x.jpg" alt="Darrell Moore">
+            </picture>
+            <h3><i>Darrell's User Journey</i></h3>
+            <picture>
+                <source srcset="img/vela/vela_1x/user_journey_darrell_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /user_journey_darrell_2x.jpg" alt="Darrell User Journey">
+            </picture>
+        </div>
+
+        <div id="sitemap">
+            <h1>Sitemap</h1>
+            <p>With user personas and user flows in mind, the first iteration of the Vela sitemap was created with Figma
+                to get the basis of the navigation structure for our users.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/vela_site_map_v1_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /vela_sitemap_v1_2x.jpg" alt="Vela Sitemap V1">
+            </picture>
+        </div>
+
+        <div>
+            <h2><i>Card Sort & Refined Sitemap</i></h2>
+            <p>In order to validate my design choices and navigational structure, or discover opportunities to make
+                improvements, an unmoderated Open Sort exercise was conducted using Optimal Workshop. A link to the
+                exercise was shared with family, friends, and various Slack and Discord spaces. Using the best merge
+                method, I retooled the foundation of Vela accordingly.</p>
+            <h3><i>Best Merge Method</i></h3>
+            <picture>
+                <source srcset="img/vela/vela_1x/card_sort_best_merge_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /card_sort_best_merge_2x.jpg" alt="Best Merge Method">
+            </picture>
+            <h3><i>Updated Sitemap</i></h3>
+            <picture>
+                <source srcset="img/vela/vela_1x/vela_sitemap_v2_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /vela_sitemap_v2_2x.jpg" alt="Vela Sitemap V2">
+            </picture>
+        </div>
+
+        <div id="wireframing">
+            <h1>Wireframing & Prototyping</h1>
+            <h2><i>Low-Fidelity Wireframes</i></h2>
+            <p>With a refined sitemap, it came time to bring my design ideas to life. With the business goals, user
+                needs, and navigational structure in mind, I used Adobe Photoshop, a Wacom Intuos tablet, and the brush
+                tool to sketch out what the Vela app would roughly look like, creating the foundation of what would
+                later become a high-fidelity, clickable prototype.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/low_fidelity_dashboard_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /low_fidelity_dashboard_2x.jpg" alt="Low-Fidelity Home">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/low_fidelity_locations_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /low_fidelity_locations_2x.jpg" alt="Low-Fidelity Locations">
+            </picture>
+        </div>
+        <div>
+            <h2><i>Mid-Fidelity Prototype</i></h2>
+            <p>Transitioning to Adobe XD, I translated my low-fidelity sketches into mid-fidelity wireframes. Switching
+                to this platform presented many opportunities to refine the design in real-time, discover numerous
+                improvement opportunities off the bat, and reassessing the foundation of the design. Once these
+                wireframes were assembled, it was time to add in UI elements and really give the application life for
+                the first time.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/mid_fidelity_home_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /mid_fidelity_home_2x.jpg" alt="Mid-Fidelity Home">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/mid_fidelity_conditions_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /mid_fidelity_conditions_2x.jpg" alt="Mid-Fidelity Conditions">
+            </picture>
+        </div>
+        <div>
+            <h2><i>High-Fidelity Prototype</i></h2>
+            <p>After I felt comfortable with the structure of my mid-fidelity wireframes, it was time to create a
+                clickable high-fidelity prototype that included all the application’s main features and allowed users to
+                perform all the app’s key functions. This step included incorporating UI elements, including color,
+                icons, copy, and animations. This is the version of the app that was used for usability testing.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/high_fidelity_prototype_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /high_fidelity_prototype_2x.jpg" alt="High-Fidelity Prototype">
+            </picture>
+        </div>
+
+        <div id="usability_testing">
+            <h1>Usability Testing</h1>
+            <p>6 moderated, remote usability tests were run over the course of 4 days, with each person meeting with me
+                over Zoom or Google Meet in order to record the interviews to later assess results as needed.
+                Participants were given 5 tasks to complete during our meetings and were encouraged to think out loud
+                when navigating through the app in order for me to gauge their feelings, emotions, and behaviors
+                throughout the process. At the conclusion of testing, I created an affinity map and rainbow spreadsheet
+                to analyze the results, and used Jakob Nielsen’s severity scale to determine what improvements were the
+                most urgent to address moving forward. Below is the affinity map analyzing the results of each testing
+                session, color coded by the respondees.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/usability_testing_affinity_map_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /usability_testing_affinity_map_2x.jpg" alt="Usability Testing Data">
+            </picture>
+        </div>
+        <div>
+            <h2><i>Preference Testing</i></h2>
+            <p>After making a few changes to key wireframes, a preference test was conducted through Helio and sent
+                directly to friends and family, along with multiple social channels; a total of 30 responses were
+                recorded and analyzed. Users were asked to choose between variations of the app’s Splash Screen,
+                Sign-Up, and Dashboard. The results from the usability and preference tests would influence how I
+                approached the redesign of the application moving forward.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/preference_testing1_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /preference_testing1_2x.jpg" alt="Preference Testing 1">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/preference_testing2_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /preference_testing2_2x.jpg" alt="Preference Testing 2">
+            </picture>
+        </div>
+        <div id="refining_design">
+            <h1>Refining the Design</h1>
+            <p>At the conclusion of both usability and preference testing, I went back to the high-fidelity prototype to
+                make further revisions, keeping in mind the pain points, frustrations, dead ends, and mistakes that
+                users experienced while using Vela for the first time. This also gave me the opportunity to make changes
+                based on elements of Material Design, emotional design, grids, and spacing. Before and afters of the
+                splash screen and home page are shown below.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/refining_the_design_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /refining_the_design_2x.jpg" alt="Refining the Design">
+            </picture>
+        </div>
+
+        <div>
+            <h2><i>UI Style Guide</i></h2>
+            <p>In order to convey the design to an engineering team and shareholders who are not working on the project,
+                I created a UI Style Guide to showcase specific design aspects of the product, including colors,
+                typography, iconography, navigation, imagery, and basic guidelines.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/ui_style_guide_color_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /ui_style_guide_color_2x.jpg" alt="UI Style Guide Color">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/ui_style_guide_typography_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /ui_style_guide_typography_2x.jpg" alt="UI Style Guide Typography">
+            </picture>
+        </div>
+
+        <div>
+            <h2><i>Design Language</i></h2>
+            <p>With the UI Style Guide listing the set of standards expected for the overall product, I took to creating
+                a Design Language System that dives more in depth and provides a guide for the overall aesthetics and
+                style for a single platform.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/design_language_grids_layout_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /design_language_grids_layout_2x.jpg" alt="Design Language Grids">
+            </picture>
+            <picture>
+                <source srcset="img/vela/vela_1x/design_language_iconography_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /design_language_iconography_2x.jpg" alt="Design Language Iconography">
+            </picture>
+        </div>
+
+        <div>
+            <h2><i>Accessibility</i></h2>
+            <p>In order to cater Vela to meet the needs of the visually impaired, accessibility features including
+                screen reader, monochrome mode, and pinch to zoom were included to streamline their experience. Each
+                feature can be accessed via the Settings tab, and once active, will display an icon at the top of the
+                page to indicate it is in use.</p>
+            <picture>
+                <source srcset="img/vela/vela_1x/accessibility_1x.jpg" media="(max-width:767px)">
+                <img src="img/vela/vela_2x /accessibility_2x.jpg" alt="Accessibility">
+            </picture>
+        </div>
+
+        <div id="prototype">
+            <h1>Clickable Prototype</h1>
+            <p>Explore the Vela mobile app in its final iteration following refinements!</p>
+            <iframe src="https://xd.adobe.com/embed/4659c7be-c91e-49dc-824b-690a0df9e682-130a/" height="932" width="430"
+                frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+    </main>
+
+
+    <footer id="contact">
+        <div>
+            <h2>Get in Touch</h2>
+            <p>
+                Want to work together? Lets get in touch! Call: <a href="tel:+9254083213">+1(800)-867-5309.</a> Prefer
+                sending
+                an email?
+            </p>
+            <div>
+                <a href="mailto:zacharykinovsky[at]gmail.com">Email me</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/zacharykinovsky/" target="_blank">
+                    <?xml version="1.0" ?>
+                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                    <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1"
+                        viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z" />
+                            <path
+                                d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://github.com/kinovsky" target="_blank">
+                    <src="<?xml version="1.0" ?><svg enable-background="new -1163 1657.697 56.693 56.693"
+                            height="56.693px" id="Layer_1" version="1.1" viewBox="-1163 1657.697 56.693 56.693"
+                            width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g>
+                                <path clip-rule="evenodd"
+                                    d="M-1134.6598,1662.9163c-13.601,0-24.63,11.0267-24.63,24.6299   c0,10.8821,7.0573,20.1144,16.8435,23.3713c1.2308,0.2279,1.6829-0.5345,1.6829-1.1849c0-0.587-0.0227-2.5276-0.0334-4.5857   c-6.8521,1.4901-8.2979-2.906-8.2979-2.906c-1.1205-2.8467-2.7347-3.6039-2.7347-3.6039   c-2.2349-1.5287,0.1685-1.4972,0.1685-1.4972c2.473,0.1737,3.7755,2.5385,3.7755,2.5385c2.1967,3.7651,5.7618,2.6765,7.1675,2.0472   c0.2211-1.5917,0.8591-2.6786,1.5637-3.2936c-5.4707-0.6226-11.2218-2.7347-11.2218-12.1722c0-2.6888,0.9623-4.8861,2.538-6.611   c-0.2557-0.6206-1.0989-3.1255,0.2386-6.5183c0,0,2.0684-0.6616,6.7747,2.525c1.9648-0.5458,4.0719-0.8195,6.165-0.829   c2.093,0.0095,4.2017,0.2832,6.17,0.829c4.7012-3.1866,6.7665-2.525,6.7665-2.525c1.3406,3.3928,0.4974,5.8977,0.2417,6.5183   c1.5793,1.7249,2.5348,3.9221,2.5348,6.611c0,9.4602-5.7618,11.5428-11.2465,12.1527c0.8834,0.7644,1.6704,2.2632,1.6704,4.561   c0,3.2955-0.0282,5.9479-0.0282,6.7592c0,0.6556,0.4432,1.4236,1.6915,1.1818c9.7812-3.2605,16.8296-12.4896,16.8296-23.3682   C-1110.0299,1673.943-1121.0574,1662.9163-1134.6598,1662.9163z"
+                                    fill-rule="evenodd" />
+                                <path
+                                    d="M-1149.9611,1698.2793c-0.0542,0.1227-0.2469,0.1593-0.4222,0.0753c-0.1788-0.0804-0.2788-0.2473-0.2211-0.37   c0.053-0.126,0.2457-0.161,0.4242-0.0769C-1150.0013,1697.9882-1149.8993,1698.1566-1149.9611,1698.2793L-1149.9611,1698.2793z    M-1150.2642,1698.0547" />
+                                <path
+                                    d="M-1148.9634,1699.3922c-0.1174,0.1086-0.3473,0.0581-0.5031-0.1139c-0.1613-0.1718-0.1912-0.4016-0.072-0.5118   c0.1211-0.1088,0.3438-0.0579,0.505,0.1139C-1148.8721,1699.0541-1148.8407,1699.2819-1148.9634,1699.3922L-1148.9634,1699.3922z    M-1149.1984,1699.14" />
+                                <path
+                                    d="M-1147.9922,1700.8105c-0.151,0.1051-0.3979,0.0067-0.5505-0.2123c-0.151-0.2191-0.151-0.4819,0.0035-0.5872   c0.1526-0.1051,0.396-0.0104,0.5505,0.2068C-1147.8381,1700.4406-1147.8381,1700.7034-1147.9922,1700.8105L-1147.9922,1700.8105z    M-1147.9922,1700.8105" />
+                                <path
+                                    d="M-1146.6619,1702.1812c-0.1351,0.1489-0.4227,0.1086-0.6329-0.0945c-0.2155-0.1984-0.2753-0.4803-0.1403-0.6293   c0.1371-0.149,0.4263-0.1072,0.6381,0.0944C-1146.5831,1701.7501-1146.5182,1702.0337-1146.6619,1702.1812L-1146.6619,1702.1812z    M-1146.6619,1702.1812" />
+                                <path
+                                    d="M-1144.8265,1702.9769c-0.0597,0.1927-0.3365,0.2804-0.6154,0.1984c-0.2788-0.0845-0.4608-0.3103-0.4047-0.5051   c0.0577-0.1943,0.3361-0.2855,0.6169-0.1979C-1144.9512,1702.5563-1144.7688,1702.7805-1144.8265,1702.9769L-1144.8265,1702.9769z    M-1144.8265,1702.9769" />
+                                <path
+                                    d="M-1142.8107,1703.1243c0.0067,0.2031-0.2299,0.3716-0.5226,0.3752c-0.2944,0.0067-0.533-0.1577-0.5361-0.3577   c0-0.2052,0.2313-0.3717,0.5258-0.3768C-1143.0509,1702.7594-1142.8107,1702.9227-1142.8107,1703.1243L-1142.8107,1703.1243z    M-1142.8107,1703.1243" />
+                                <path
+                                    d="M-1140.9351,1702.8052c0.035,0.198-0.1686,0.4015-0.4594,0.4557c-0.2859,0.0526-0.5504-0.0701-0.587-0.2665   c-0.0354-0.2031,0.1716-0.4066,0.4573-0.4592C-1141.233,1702.4846-1140.9722,1702.6036-1140.9351,1702.8052L-1140.9351,1702.8052z    M-1140.9351,1702.8052" />
+                            </g>
+                        </svg>
+            </div>
+            <p>Copyright Zachary Kinovsky 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
