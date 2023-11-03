@@ -128,7 +128,7 @@ a {
     text-decoration: underline;
   }  
 
-  button.contact:active { /* Selected link */
+  .button.contact:active { /* Selected link */
     color: #525252;
   }
 
