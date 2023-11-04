@@ -60,6 +60,7 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
+
 .social-icon {
     display: inline-block;
     width: 24px;
@@ -247,7 +248,7 @@ div.accessibility {
   }
 
 .logo {
-    max-width: 250px;
+    max-width: 200px;
     }
 
 .picture {
@@ -271,16 +272,45 @@ nav > ul {
     padding: 0;
     }
 
-nav > ul > li {
-    display: inline-block;
-    }
-
 nav > ul > li > a {
-        padding: 0 30px;
+        padding: 0 20px;
         text-transform: uppercase;
         font-weight: 700;
         color: #373737;
     }
+
+    .navtoggle li:not(:last-child) { /*this targets navigation bar and hids all tabs but last li, allowing hamburger icon to be used by js*/
+      display: none;
+  }
+  
+  .navtoggle, .navtoggle.responsive {
+      position: relative;
+  }
+  
+  .navtoggle li .icon {
+      position: absolute;
+      right: 0;
+      top: 15px;
+      font-size: 20px;
+      padding-right: 0;
+      color:#ffffff;
+  }
+  
+  
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #006d77;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+  
+  
 
 #vela ul > li > a {
         padding: 0 30px;
@@ -365,9 +395,37 @@ Medium devices (640px and larger)
         margin-top: 99px;
       }
 
+      nav > ul > li {
+        display: inline-block;
+        }
+
+        .navtoggle li:not(:last-child) {
+          display: none;
+        }
+
+        .navtoggle li:not(:last-child) {
+          display: inline-block;
+        }
+
+        .navtoggle li:last-child {
+          display: none;
+
+        }
+
+        .navtoggle li .icon {
+          position: absolute;
+          right: 0;
+          top: 2px;
+          font-size: 20px;
+        }
+
 #hero {
     text-align: center; /* Centers text */
     }
+
+    .logo {
+      min-width: 250px;
+      }
 
 #hero span {
         display: block;
