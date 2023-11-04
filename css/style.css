@@ -168,6 +168,10 @@ a:active { /* selected link */
     padding: 0 25px;
     }
 
+.imgcontainer{
+        float:left;
+    }
+
 .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     }
@@ -185,7 +189,7 @@ a:active { /* selected link */
     }
 
 #vela .row { padding-bottom: 25px; border-bottom: 2px solid #373737; 
-
+    margin: 25px 0
     }
 
 #vela space { padding-bottom: 25px; 
@@ -223,7 +227,8 @@ a:active { /* selected link */
             font-size: 1.75em;
             font-weight: 700;
             font-style: italic;
-            text-align: unset;
+            text-align: l;
+
           }
 
 #vela h4 {
@@ -237,6 +242,10 @@ div.table_of_contents {
 
 }
 
+div.accessibility {
+    column-gap: 40px;
+  }
+
 .logo {
     max-width: 250px;
     }
@@ -245,6 +254,16 @@ div.table_of_contents {
     max-width: 500px;
     height: auto;
     margin: 0 auto;
+    }
+
+    .access {
+        height: 350px;
+        margin: 0 auto;
+        }
+
+    .persona {
+        height:fit-content;
+        margin: auto;
     }
 
 nav > ul {
@@ -363,7 +382,7 @@ Medium devices (640px and larger)
   }
 
 [class*="col-"] {
-    float: left;
+    float: unset;
     padding: 10px;
   }
 
