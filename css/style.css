@@ -297,10 +297,16 @@ div.accessibility {
     }
 
 .picture {
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
     }
+
+    .pictureheight {
+      max-height: 500px;
+      height: auto;
+      margin: 0 auto;
+      }
 
     .access {
         height: 350px;
