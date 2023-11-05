@@ -1,4 +1,4 @@
-console.log("Welcome to my portfolio site!")
+console.log("Welcome to my portfolio site!");
 
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
@@ -17,3 +17,5 @@ function menuToggle() {
       x.className = 'navtoggle';
     }
   }
+
+  
